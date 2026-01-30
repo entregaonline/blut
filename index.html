@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Sônico Pro | O Fim do Barulho</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <style>
+ :root {
+ --danger: #ff3e3e;
+ --success: #00ff88;
+ --bg-dark: #050505;
+ --card-bg: #111111;
+ --text-main: #e0e0e0;
+ --accent: #ff0000;
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, sans-serif; scroll-behavior: smooth; }
+ body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; }
+
+ /* Banner de Urgência */
+ .top-bar {
+ background: var(--danger);
+ color: white;
+ text-align: center;
+ padding: 10px;
+ font-size: 0.9rem;
+ font-weight: bold;
+ position: sticky;
+ top: 0;
+ z-index: 2000;
+ }
+
+ /* Hero Section */
+ header {
+ height: 90vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ padding: 0 5%;
+ background: radial-gradient(circle at 50% 50%, #1a0000 0%, #050505 100%);
+ }
+
+ .hero-content h1 {
+ font-size: clamp(2.5rem, 8vw, 4.5rem);
+ font-weight: 900;
+ line-height: 1;
+ margin-bottom: 25px;
+ text-transform: uppercase;
+ }
+
+ .hero-content h1 span { color: var(--accent); text-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+
+ .hero-content p { font-size: 1.2rem; color: #aaa; max-width: 700px; margin: 0 auto 40px; }
+
+ /* Botão de Alta Conversão */
+ .btn-mega {
+ background: linear-gradient(135deg, #ff0000 0%, #8b0000 100%);
+ color: white;
+ padding: 25px 60px;
+ border-radius: 12px;
+ text-decoration: none;
+ font-weight: 900;
+ font-size: 1.4rem;
+ box-shadow: 0 10px 40px rgba(255, 0, 0, 0.4);
+ transition: 0.3s;
+ display: inline-block;
+ animation: pulse 2s infinite;
+ }
+
+ @keyframes pulse {
+ 0% { transform: scale(1); }
+ 50% { transform: scale(1.05); }
+ 100% { transform: scale(1); }
+ }
+
+ /* Seção da Dor */
+ .pain-section { padding: 100px 5%; background: #0a0a0a; text-align: center; }
+ .pain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px; }
+ .pain-item { padding: 30px; background: #000; border: 1px solid #222; border-radius: 15px; }
+ .pain-item i { font-size: 2.5rem; color: var(--danger); margin-bottom: 20px; }
+
+ /* O Diferencial (Baseado no seu Vídeo) */
+ .product-demo { padding: 100px 5%; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 50px; align-items: center; }
+ .demo-text { flex: 1; min-width: 300px; }
+ .demo-video { flex: 1; min-width: 300px; background: #111; border-radius: 20px; overflow: hidden; border: 2px solid #333; position: relative; }
+
+ .tag-tech { background: #333; color: var(--success); padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; margin-bottom: 20px; display: inline-block; }
+
+ /* Preço */
+ .price-box {
+ background: var(--card-bg);
+ padding: 60px 20px;
+ text-align: center;
+ border-radius: 30px;
+ border: 2px solid var(--accent);
+ margin: 100px auto;
+ max-width: 500px;
+ }
+
+ .price-old { text-decoration: line-through; color: #666; font-size: 1.2rem; }
+ .price-new { font-size: 4rem; font-weight: 900; color: #fff; margin: 10px 0; }
+ 
+ footer { padding: 50px; text-align: center; color: #444; border-top: 1px solid #111; }
+
+ @media (max-width: 768px) {
+ .hero-content h1 { font-size: 2.5rem; }
+ }
+ </style>
+</head>
+<body>
+
+ <div class="top-bar">
+ OFERTA LIMITADA: <span id="timer">09:57</span> RESTANTES PARA O DESCONTO DE 50%
+ </div>
+
+ <header>
+ <div class="hero-content">
+ <span class="tag-tech"><i class="fas fa-shield-halved"></i> TECNOLOGIA DE DEFESA SÔNICA</span>
+ <h1>Chega de ser refém do <span>som alto.</span></h1>
+ <p>Retome sua paz, seu sono e sua dignidade. O dispositivo mais potente do mercado para silenciar caixas de som Bluetooth indesejadas instantaneamente.</p>
+ <a href="#comprar" class="btn-mega">QUERO O MEU AGORA</a>
+ </div>
+ </header>
+
+ <section class="pain-section">
+ <h2>Até quando você vai aguentar isso?</h2>
+ <div class="pain-grid">
+ <div class="pain-item">
+ <i class="fas fa-bed"></i>
+ <h3>Noites em Claro</h3>
+ <p>O som do vizinho não te deixa dormir? O estresse acumulado acaba com sua produtividade.</p>
+ </div>
+ <div class="pain-item">
+ <i class="fas fa-brain"></i>
+ <h3>Ansiedade e Nervosismo</h3>
+ <p>A sensação de impotência ao pedir silêncio e ser ignorado é devastadora.</p>
+ </div>
+ <div class="pain-item">
+ <i class="fas fa-volume-xmark"></i>
+ <h3>Paz Inexistente</h3>
+ <p>Sua casa deveria ser seu refúgio, não uma extensão da festa dos outros.</p>
+ </div>
+ </div>
+ </section>
+
+ <section class="product-demo">
+ <div class="demo-video">
+ <div style="padding: 56.25% 0 0 0; position: relative;">
+ <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #444;">[VÍDEO DE DEMONSTRAÇÃO]</p>
+ </div>
+ </div>
+ <div class="demo-text">
+ <span class="tag-tech" style="color: var(--accent);">MECANISMO ÚNICO</span>
+ <h2>Por que este dispositivo é diferente de tudo?</h2>
+ <p style="margin: 20px 0; color: #ccc;">Ao contrário de apps falsos ou bloqueadores chineses baratos, nosso hardware utiliza o <b>Chip ESP32 de Alta Potência</b> com firmware customizado para sobrecarga de sinal.</p>
+ <ul style="list-style: none; color: var(--success); font-weight: bold;">
+ <li><i class="fas fa-check"></i> Ventilação Ativa (Não superaquece)</li>
+ <li><i class="fas fa-check"></i> Dissipador de Calor em Alumínio</li>
+ <li><i class="fas fa-check"></i> Alcance de Longa Distância</li>
+ <li><i class="fas fa-check"></i> Acionamento em 1 Segundo</li>
+ </ul>
+ </div>
+ </section>
+
+ <section id="comprar">
+ <div class="price-box">
+ <p style="font-weight: bold; text-transform: uppercase; color: var(--accent);">Últimas unidades em estoque</p>
+ <p class="price-old">De R$ 397,00</p>
+ <p style="font-size: 1.5rem; margin-bottom: -10px;">Por apenas</p>
+ <p class="price-new">R$ 197,00</p>
+ <p style="margin-bottom: 30px;">ou 12x de R$ 19,78</p>
+ <a href="SEU_LINK_AQUI" class="btn-mega" style="padding: 20px 40px; font-size: 1.1rem;">ADQUIRIR COM GARANTIA TOTAL</a>
+ <p style="margin-top: 20px; font-size: 0.8rem; color: #888;"><i class="fas fa-lock"></i> Compra 100% Segura e Sigilosa</p>
+ </div>
+ </section>
+
+ <footer>
+ <p>&copy; 2026 SilentMaster Pro. Todos os direitos reservados.<br>
+ Uso destinado exclusivamente para proteção de privacidade e segurança pessoal.</p>
+ </footer>
+
+ <script>
+ // Script simples para o contador de urgência
+ let time = 597; // 9 minutos e 57 segundos
+ const timerElement = document.getElementById('timer');
+
+ setInterval(() => {
+ let minutes = Math.floor(time / 60);
+ let seconds = time % 60;
+ timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+ if (time > 0) time--;
+ }, 1000);
+ </script>
+</body>
+</html>
